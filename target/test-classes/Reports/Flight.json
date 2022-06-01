@@ -1,0 +1,167 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2022-05-26T16:24:58.703Z",
+        "before": [
+          {
+            "result": {
+              "duration": 17759458600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "HooksClass.Before()"
+            }
+          }
+        ],
+        "line": 2,
+        "name": "Validation of Flight Booking",
+        "description": "",
+        "id": "validation-of-phptravel-website;validation-of-flight-booking",
+        "after": [
+          {
+            "result": {
+              "duration": 819710500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "HooksClass.AfterExecution()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 71430500,
+              "status": "passed"
+            },
+            "line": 3,
+            "name": "User Launch PhpTravel Site",
+            "match": {
+              "location": "StepDefinitions.user_launch_php_travel_site()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 162474000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "User verifies Page is Correct",
+            "match": {
+              "location": "StepDefinitions.user_verifies_page_is_correct()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 405352100,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User Clicks Customer Front End Button",
+            "match": {
+              "location": "StepDefinitions.user_clicks_customer_front_end_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 6829317700,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User Enters Valid UserName and PassWord",
+            "match": {
+              "location": "StepDefinitions.user_Enters_Valid_UserName_and_PassWord()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 3925204400,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "clicks Remember me Button and clicks Login Button",
+            "match": {
+              "location": "StepDefinitions.clicks_Remember_me_Button_and_clicks_Login_Button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 77468000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User Verifies PhpTravel HomePage is Displayed",
+            "match": {
+              "location": "StepDefinitions.user_verifies_php_travel_home_page_is_displayed()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 3211486200,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "User Clicks Flight Link and User verifies Flight BookingPage is Displayed",
+            "match": {
+              "location": "StepDefinitions.user_clicks_flight_link_and_user_verifies_flight_booking_page_is_displayed()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 39914188100,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "User Selects RoundTrip,FlightType,Starting Place,Destination,Depature Date,Travellers Details and clicks Serch Button",
+            "match": {
+              "location": "StepDefinitions.user_selects_round_trip_flight_type_starting_place_destination_depature_date_travellers_details_and_clicks_serch_button()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 273354200,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "User Selects Flight Stop as Direct and Gets Total Flights",
+            "match": {
+              "location": "StepDefinitions.user_Selects_Flight_Stop_as_Direct_and_Gets_Total_Flights()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.interactions.MoveTargetOutOfBoundsException: move target out of bounds\n  (Session info: chrome\u003d101.0.4951.67)\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027DESKTOP-S8D13SL\u0027, ip: \u0027192.168.43.6\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_331\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.67, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: C:\\Users\\NOLAN\\AppData\\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:3394}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 2ceec49fb0427c19103a9a54775dfdd1\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)\r\n\tat java.lang.reflect.Constructor.newInstance(Unknown Source)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:618)\r\n\tat org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:639)\r\n\tat com.base.BaseClass.a(BaseClass.java:180)\r\n\tat com.stepdefinitions.StepDefinitions.user_Sorts_Flight_Fair_and_Selects_Airline_as_Hop(StepDefinitions.java:140)\r\n\tat ✽.User Sorts Flight Fair and Selects Airline as Hop(file:src/test/resources/Feature/Flight.feature:12)\r\n",
+              "duration": 4376779000,
+              "status": "failed"
+            },
+            "line": 12,
+            "name": "User Sorts Flight Fair and Selects Airline as Hop",
+            "match": {
+              "location": "StepDefinitions.user_Sorts_Flight_Fair_and_Selects_Airline_as_Hop()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Validation of PhpTravel Website",
+    "description": "",
+    "id": "validation-of-phptravel-website",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/Feature/Flight.feature",
+    "tags": []
+  }
+]

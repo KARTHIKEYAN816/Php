@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.tablesorter.min.js"></script>
+<script src="js/Chart.min.js"></script>
+<script src="js/moment.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+<link rel="stylesheet" href="css/cucumber.css" type="text/css"/>
+<link rel="stylesheet" href="css/font-awesome.min.css"/>
+<link rel="shortcut icon" href="images/favicon.png"/>
+
+<script>
+$(document).ready(function() {
+    // this will tell tablesorter to try looking for the data-value attribute
+    // if present, it'll sort by that instead
+    // otherwise, it'll sort by the text content of the table cell
+    $("#tablesorter").tablesorter({
+        textAttribute: 'data-value',
+        // ignores the first row of the header, the 'scenario', 'steps', since
+        // sorting those doesn't make sense
+        selectorHeaders: '> thead tr:not(.dont-sort) th',
+        // use a stable sort
+        sortStable: true
+    });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+<title>Cucumber Reports  - Steps Overview</title>
+
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navigation">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse">
+      <p class="navbar-text navbar-left">Cucumber Report</p>
+      <ul class="nav navbar-nav navbar-right">
+        <li role="presentation" ><a href="overview-features.html">Features</a></li>
+        <li role="presentation" ><a href="overview-tags.html">Tags</a></li>
+        <li role="presentation"     class="active" ><a href="overview-steps.html">Steps</a></li>
+        <li role="presentation" ><a href="overview-failures.html">Failures</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="container-fluid">
+  <div class="col-md-5 col-md-offset-1">
+
+<table class="table table-bordered" id="build-info">
+  <thead>
+    <tr>
+      <th>Project</th>
+      <th>Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="info">
+      <td>PHP Travel Automatiopn</td>
+      <td>30 May 2022, 12:49</td>
+    </tr>
+  </tbody>
+</table>
+
+  </div>
+  <div class="col-md-3 col-md-offset-2">
+  </div>
+</div>
+
+
+<div id="report-lead" class="container-fluid">
+  <div class="col-md-10 col-md-offset-1">
+    <h2>Steps Statistics</h2>
+      <p>The following graph shows step statistics for this build. Below list is based on results.
+ step does not provide information about result then is not listed below.
+ Additionally @Before and @After are not counted because they are part of the scenarios, not steps.</p>
+  </div>
+</div>
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <table id="tablesorter" class="stats-table table-hover">
+
+        <thead>
+          <tr class="header">
+            <th>Implementation</th>
+            <th>Occurrences</th>
+            <th>Average duration</th>
+            <th>Max duration</th>
+            <th>Total durations</th>
+            <th>Ratio</th>
+          </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+              <td class="location">HooksClass.AfterExecution()</td>
+              <td>1</td>
+              <td class="duration" data-value="1565225300">1.565</td>
+              <td class="duration" data-value="1565225300">1.565</td>
+              <td class="duration" data-value="1565225300">1.565</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">HooksClass.Before()</td>
+              <td>1</td>
+              <td class="duration" data-value="65962164600">1:5.962</td>
+              <td class="duration" data-value="65962164600">1:5.962</td>
+              <td class="duration" data-value="65962164600">1:5.962</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">StepDefinitions.clicks_Remember_me_Button_and_clicks_Login_Button()</td>
+              <td>1</td>
+              <td class="duration" data-value="19773907200">19.773</td>
+              <td class="duration" data-value="19773907200">19.773</td>
+              <td class="duration" data-value="19773907200">19.773</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">StepDefinitions.user_Enters_Valid_UserName_and_PassWord()</td>
+              <td>1</td>
+              <td class="duration" data-value="13032690400">13.032</td>
+              <td class="duration" data-value="13032690400">13.032</td>
+              <td class="duration" data-value="13032690400">13.032</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">StepDefinitions.user_Selects_Flight_Stop_as_Direct_and_Gets_Total_Flights()</td>
+              <td>1</td>
+              <td class="duration" data-value="222910700">0.222</td>
+              <td class="duration" data-value="222910700">0.222</td>
+              <td class="duration" data-value="222910700">0.222</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">StepDefinitions.user_Sorts_Flight_Fair_and_Selects_Airline_as_Hop()</td>
+              <td>1</td>
+              <td class="duration" data-value="11569150900">11.569</td>
+              <td class="duration" data-value="11569150900">11.569</td>
+              <td class="duration" data-value="11569150900">11.569</td>
+              <td class="failed">0.00%</td>
+            </tr>
+            <tr>
+              <td class="location">StepDefinitions.user_clicks_customer_front_end_button()</td>
+              <td>1</td>
+              <td class="duration" data-value="1859728200">1.859</td>
+              <td class="duration" data-value="1859728200">1.859</td>
+              <td class="duration" data-value="1859728200">1.859</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">StepDefinitions.user_clicks_flight_link_and_user_verifies_flight_booking_page_is_displayed()</td>
+              <td>1</td>
+              <td class="duration" data-value="3496993700">3.496</td>
+              <td class="duration" data-value="3496993700">3.496</td>
+              <td class="duration" data-value="3496993700">3.496</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">StepDefinitions.user_launch_php_travel_site()</td>
+              <td>1</td>
+              <td class="duration" data-value="442480200">0.442</td>
+              <td class="duration" data-value="442480200">0.442</td>
+              <td class="duration" data-value="442480200">0.442</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">StepDefinitions.user_selects_round_trip_flight_type_starting_place_destination_depature_date_travellers_details_and_clicks_serch_button()</td>
+              <td>1</td>
+              <td class="duration" data-value="33203784200">33.203</td>
+              <td class="duration" data-value="33203784200">33.203</td>
+              <td class="duration" data-value="33203784200">33.203</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">StepDefinitions.user_verifies_page_is_correct()</td>
+              <td>1</td>
+              <td class="duration" data-value="731637800">0.731</td>
+              <td class="duration" data-value="731637800">0.731</td>
+              <td class="duration" data-value="731637800">0.731</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">StepDefinitions.user_verifies_php_travel_home_page_is_displayed()</td>
+              <td>1</td>
+              <td class="duration" data-value="120648800">0.120</td>
+              <td class="duration" data-value="120648800">0.120</td>
+              <td class="duration" data-value="120648800">0.120</td>
+              <td class="passed">100.00%</td>
+            </tr>
+        </tbody>
+
+        <tfoot class="total">
+          <tr>
+            <td>12</td>
+            <td>12</td>
+            <td class="duration">12.665</td>
+            <td class="duration">1:5.962</td>
+            <td class="duration">2:31.981</td>
+            <td>Totals</td>
+          </tr>
+        </tfoot>
+
+      </table>
+    </div>
+  </div>
+</div>
+
+
+<nav class="navbar navbar-default" id="footer">
+  <div class="container-fluid">
+    <p class="navbar-text navbar-right">
+        <small>generate Cucumber HTML reports via:&nbsp;</small>
+        <a class="navbar-link" href="https://github.com/jenkinsci/cucumber-reports-plugin">Jenkins Plugin</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-reporting">Standalone</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-sandwich">Sandwich</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/maven-cucumber-reporting">Maven</a>
+        &nbsp;&nbsp;
+    </p>
+  </div>
+</nav>
+
+</body>
+</html>
