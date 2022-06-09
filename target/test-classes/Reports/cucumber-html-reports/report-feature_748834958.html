@@ -74,7 +74,7 @@ $(document).ready(function() {
   <tbody>
     <tr class="info">
       <td>PHP Travel Automatiopn</td>
-      <td>26 May 2022, 21:49</td>
+      <td>30 May 2022, 12:49</td>
     </tr>
   </tbody>
 </table>
@@ -127,9 +127,9 @@ $(document).ready(function() {
         <tbody>
         <tr>
           <td class="tagname">Validation of PhpTravel Website</td>
-          <td      class="passed"    >7</td>
+          <td      class="passed"    >9</td>
           <td      class="failed"    >1</td>
-          <td     class="skipped"   >2</td>
+          <td >0</td>
           <td >0</td>
           <td >0</td>
           <td class="total">10</td>
@@ -138,7 +138,7 @@ $(document).ready(function() {
           <td  class="failed"    >1</td>
           <td class="total">1</td>
 
-          <td class="duration" data-value="39394712400">39.394</td>
+          <td class="duration" data-value="84453932100">1:24.453</td>
           <td class="failed">Failed</td>
         </tr>
         </tbody>
@@ -189,7 +189,7 @@ $(document).ready(function() {
 </div>
 
 
-  <span class="lead-duration duration">39.394</span>
+  <span class="lead-duration duration">1:24.453</span>
 
 
   <span data-toggle="collapse" class=" collapsable-control" data-target="#element-1">
@@ -227,7 +227,7 @@ $(document).ready(function() {
             <span class="keyword indention">Before</span>
               <span class="location name">HooksClass.Before()</span>
 
-  <span class="lead-duration duration">16.151</span>
+  <span class="lead-duration duration">1:5.962</span>
 
           </div>
 
@@ -264,7 +264,7 @@ $(document).ready(function() {
   <span class="keyword indention">Given</span>
   <span class="name">User Launch PhpTravel Site</span>
 
-  <span class="lead-duration duration">0.106</span>
+  <span class="lead-duration duration">0.442</span>
 
 </div>
 
@@ -291,7 +291,7 @@ $(document).ready(function() {
   <span class="keyword indention">Then</span>
   <span class="name">User verifies Page is Correct</span>
 
-  <span class="lead-duration duration">0.221</span>
+  <span class="lead-duration duration">0.731</span>
 
 </div>
 
@@ -318,7 +318,7 @@ $(document).ready(function() {
   <span class="keyword indention">When</span>
   <span class="name">User Clicks Customer Front End Button</span>
 
-  <span class="lead-duration duration">0.438</span>
+  <span class="lead-duration duration">1.859</span>
 
 </div>
 
@@ -345,7 +345,7 @@ $(document).ready(function() {
   <span class="keyword indention">Then</span>
   <span class="name">User Enters Valid UserName and PassWord</span>
 
-  <span class="lead-duration duration">6.214</span>
+  <span class="lead-duration duration">13.032</span>
 
 </div>
 
@@ -372,7 +372,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">clicks Remember me Button and clicks Login Button</span>
 
-  <span class="lead-duration duration">4.737</span>
+  <span class="lead-duration duration">19.773</span>
 
 </div>
 
@@ -399,7 +399,7 @@ $(document).ready(function() {
   <span class="keyword indention">Then</span>
   <span class="name">User Verifies PhpTravel HomePage is Displayed</span>
 
-  <span class="lead-duration duration">0.117</span>
+  <span class="lead-duration duration">0.120</span>
 
 </div>
 
@@ -426,7 +426,61 @@ $(document).ready(function() {
   <span class="keyword indention">When</span>
   <span class="name">User Clicks Flight Link and User verifies Flight BookingPage is Displayed</span>
 
-  <span class="lead-duration duration">4.012</span>
+  <span class="lead-duration duration">3.496</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">User Selects RoundTrip,FlightType,Starting Place,Destination,Depature Date,Travellers Details and clicks Serch Button</span>
+
+  <span class="lead-duration duration">33.203</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">User Selects Flight Stop as Direct and Gets Total Flights</span>
+
+  <span class="lead-duration duration">0.222</span>
 
 </div>
 
@@ -451,9 +505,9 @@ $(document).ready(function() {
 
 <div class="brief step-name-Then failed">
   <span class="keyword indention">Then</span>
-  <span class="name">User Selects RoundTrip,FlightType,Starting Place,Destination,Depature Date,Travellers Details and clicks Serch Button</span>
+  <span class="name">User Sorts Flight Fair and Selects Airline as Hop</span>
 
-  <span class="lead-duration duration">23.546</span>
+  <span class="lead-duration duration">11.569</span>
 
 </div>
 
@@ -465,16 +519,18 @@ $(document).ready(function() {
   <div class="inner-level">
     <div class="message indention">
       <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-4">
-          <a>org.openqa.selenium.ElementNotInteractableException:</a>
+          <a>org.openqa.selenium.NoSuchElementException:</a>
       </div>
       <div id="msg-4" class="collapse collapsable-details  in ">
-        <pre>org.openqa.selenium.ElementNotInteractableException: element not interactable
-  (Session info: chrome=101.0.4951.67)
+        <pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;span.irs-bar[style]&quot;}
+  (Session info: chrome=102.0.5005.63)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'DESKTOP-S8D13SL', ip: '192.168.43.6', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_331'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.67, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: C:\Users\NOLAN\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:3307}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 3522071b9ed9a76a468d2c4004e66e41
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.63, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: C:\Users\NOLAN\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:6459}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 70aa1c6c062c661faa0ace214d974bff
+*** Element info: {Using=css selector, value=span.irs-bar[style]}
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
@@ -485,75 +541,16 @@ Session ID: 3522071b9ed9a76a468d2c4004e66e41
 	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at com.sun.proxy.$Proxy18.click(Unknown Source)
-	at com.base.BaseClass.DatePicker(BaseClass.java:207)
-	at com.stepdefinitions.StepDefinitions.user_selects_round_trip_flight_type_starting_place_destination_depature_date_travellers_details_and_clicks_serch_button(StepDefinitions.java:113)
-	at &#10045;.User Selects RoundTrip,FlightType,Starting Place,Destination,Depature Date,Travellers Details and clicks Serch Button(file:src/test/resources/Feature/Flight.feature:10)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:420)
+	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:431)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at com.stepdefinitions.StepDefinitions.user_Sorts_Flight_Fair_and_Selects_Airline_as_Hop(StepDefinitions.java:136)
+	at &#10045;.User Sorts Flight Fair and Selects Airline as Hop(file:src/test/resources/Feature/Flight.feature:12)
 </pre>
       </div>
     </div>
   </div>
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-When skipped">
-  <span class="keyword indention">When</span>
-  <span class="name">User Selects Flight Stop as Direct and Gets Total Flights</span>
-
-  <span class="lead-duration duration">0.000</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-Then skipped">
-  <span class="keyword indention">Then</span>
-  <span class="name">User Sorts Flight Fair and Selects Airline as Hop</span>
-
-  <span class="lead-duration duration">0.000</span>
-
-</div>
-
-
-
-
-
 
 
 
@@ -591,7 +588,7 @@ Session ID: 3522071b9ed9a76a468d2c4004e66e41
             <span class="keyword indention">After</span>
               <span class="location name">HooksClass.AfterExecution()</span>
 
-  <span class="lead-duration duration">0.701</span>
+  <span class="lead-duration duration">1.565</span>
 
           </div>
 
