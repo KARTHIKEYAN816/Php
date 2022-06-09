@@ -74,7 +74,7 @@ if(element.getText().contains(text)) {
 public String GetExcelData(String sName,int rNo,int cNo) throws IOException {
 	String value = null;
 	FileInputStream file=new FileInputStream
-			("C:\\Users\\NOLAN\\eclipse-workspace\\com.junit\\src\\test\\resources\\ExcelData\\New Microsoft Excel Worksheet.xlsx");
+			("C:\\Users\\NOLAN\\eclipse-workspace\\New folder (2)\\PhpTravelAutomation\\src\\test\\resources\\ExcelData\\New Microsoft Excel Worksheet.xlsx");
 	Workbook wb=new XSSFWorkbook(file);
 	Sheet sheet = wb.getSheet(sName);
 	Row row = sheet.getRow(rNo);
